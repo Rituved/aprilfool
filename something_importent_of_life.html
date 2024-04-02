@@ -1,0 +1,87 @@
+
+
+<!DOCTYPE HTML> 
+<html> 
+    <head> 
+        <title> 
+            How to create a link in JavaScript?
+        </title>
+        <style>
+            h1{
+                text-align: center;
+             color: palevioletred;
+             margin-top:200px;
+            }
+            span{
+                font-size: 80px;
+            }
+ 
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: rgb(16, 140, 182);
+
+  }
+  h1{
+    margin: 0 auto;
+    color: black;
+    position: relative;
+    top: 350px;
+    font-size: 60px;
+  }
+  button{
+    position: relative;
+    top: 380px;
+    padding: 30px 60px;
+    background-color: rgb(255, 251, 0);
+    border: none;
+    font-size: 40px;
+    box-shadow: 10px 15px 50px red;
+  }
+}
+        </style>
+    </head> 
+     
+    <body style = "text-align:center;">
+         
+        <h1 > 
+            <span>&#128526;</span>hey, How are you doing?<span>&#128526;</span>
+        </h1>
+         
+        <p id = "GFG_UP" style =
+            "font-size: 19px; font-weight: bold;">
+        </p>
+         
+        <button onclick = "GFG_Fun()">
+            click here
+        </button>
+         
+        <p id = "GFG_DOWN" style =
+            "color: green; font-size: 24px; font-weight: bold;">
+        </p>
+         
+        <script>
+            var el_up = document.getElementById("GFG_UP");
+            var el_down = document.getElementById("GFG_DOWN");
+          
+             
+            function GFG_Fun() {
+                 
+                // Create anchor element.
+                var a = document.createElement('a'); 
+                 
+                // Create the text node for anchor element.
+                var link = document.createTextNode("Click to see");
+                 
+                // Append the text node to anchor element.
+                a.appendChild(link); 
+                 
+                // Set the href property.
+                a.href = "https://www.youtube.com/shorts/ECAdV9NSwss"; 
+                 
+                // Append the anchor element to the body.
+                document.body.appendChild(a); 
+            }
+        </script> 
+    </body> 
+</html>
